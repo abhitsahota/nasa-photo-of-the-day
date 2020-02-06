@@ -1,13 +1,15 @@
 import React from "react";
+import logo from "./assets/logo.png"
 import "./App.css";
+import PicData from "./components/apod-data"
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <div className="logo_container">
+        <img className="App-logo" src={logo} alt="logo" />
+      </div>
+      <PicData />
     </div>
   );
 }
